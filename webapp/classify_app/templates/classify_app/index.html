@@ -1,0 +1,17 @@
+{% extends 'classify_app/base.html' %}
+{% block title %}記事カテゴリ推定アプリメニュー{% endblock %}
+
+{% block content %}
+<div>
+  <h4 class='mt-4 mb-5 border-bottom'>記事カテゴリを推定しよう！</h4>
+  <p>記事のURLを入力してください</p>
+  <form action="{% url 'classify_app:predict' %}" method="post" class="form" enctype="multipart/form-data">
+    <!-- 外部サイトからの攻撃を防ぐ -->
+    {% csrf_token %}
+    <div class="form-group">
+      {{ form.url }}
+    </div>
+    <button type="submit" class="btn btn-primary">推定する！</button>
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,4 @@
+Django>=1.11
+nagisa
+django-bootstrap4==1.0.1
+psycopg2
