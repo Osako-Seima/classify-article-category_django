@@ -13,7 +13,6 @@
 <img src='./screenshot/2.png' width=50%>
 　　　　　　　　　　　　　
 　　　　　　　　　　　　　
-↓↓↓
 
 ![](./screenshot/3.png)
 
